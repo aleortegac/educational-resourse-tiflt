@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Speak Up: Modal Verbs against Bullying</title>
+<style>
+:root{color-scheme:light;--bg:#f2f6f4;--sf:#fff;--tx:#1f2a2e;--mu:#58666b;--bd:#d3dfda;--bd2:#2f5d50;--ch:#27493f;--chk:#f4f1e6;--yl:#f2c14e;--bl:#25608f;--ok:#1e7a4d;--bad:#b3392c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#16201e;--sf:#1f2c29;--tx:#eaf1ee;--mu:#9db0aa;--bd:#30433e;--bd2:#5fa08c;--ch:#0f2b24;--bl:#7fb6e0;--ok:#5fcf9a;--bad:#ff8a7a}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#16201e;--sf:#1f2c29;--tx:#eaf1ee;--mu:#9db0aa;--bd:#30433e;--bd2:#5fa08c;--ch:#0f2b24;--bl:#7fb6e0;--ok:#5fcf9a;--bad:#ff8a7a}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 "Trebuchet MS",Verdana,sans-serif}
+.ch{font-family:"Segoe Print","Bradley Hand","Marker Felt","Comic Sans MS",cursive}
+header{background:var(--ch);color:var(--chk);padding:28px 16px 22px;text-align:center;border-bottom:8px solid #8a6a43}
+header h1{font-size:clamp(1.7rem,6vw,2.8rem);margin:0 0 6px;font-weight:700}
+header p{margin:0 auto;max-width:560px;color:#d9e4df}
+header p.course{margin-top:8px;font-size:.9rem}
+footer{background:var(--ch);color:var(--chk);text-align:center;padding:22px 16px;border-top:8px solid #8a6a43}
+footer h2{color:var(--chk);font-size:1.2rem;margin:0 0 8px}
+footer ul{list-style:none;margin:0 auto 12px;padding:0;display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:center}
+footer p{margin:0;color:#d9e4df;font-size:.9rem}
+#sc{display:inline-block;margin-top:14px;background:var(--yl);color:#2b2300;padding:6px 16px;border-radius:20px;font-weight:700}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--sf);border-bottom:1px solid var(--bd);display:flex;gap:4px;overflow-x:auto;padding:6px 10px}
+nav a{white-space:nowrap;color:var(--tx);text-decoration:none;padding:6px 10px;border-radius:8px;font-size:.9rem}
+nav a:hover,nav a:focus-visible{background:var(--bd);outline:2px solid var(--bl)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--sf);z-index:12}
+main{max-width:880px;margin:0 auto;padding:8px 16px 40px}
+section{margin-top:34px}
+h2{font-size:1.5rem;margin:0 0 4px;color:var(--bd2)}
+.sub{color:var(--mu);margin:0 0 14px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:14px 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+button{font:inherit;cursor:pointer;border:1px solid var(--bd2);background:var(--sf);color:var(--tx);border-radius:8px;padding:6px 12px}
+button:hover{background:var(--bd)}button:focus-visible,a:focus-visible{outline:3px solid var(--bl);outline-offset:2px}
+button.on{background:var(--bd2);color:#fff}button.ok{background:var(--ok);color:#fff;border-color:var(--ok)}button.bad{background:var(--bad);color:#fff;border-color:var(--bad)}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0}.fb{font-size:.9rem;color:var(--mu)}
+.q{border-top:1px dashed var(--bd);padding-top:8px;margin-top:8px}
+.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:6px 0;border-top:1px dashed var(--bd)}.row span.t{flex:1 1 200px}
+.fc{cursor:pointer;min-height:70px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700}
+.fc.back{background:var(--ch);color:var(--chk)}
+.btn{display:inline-block;background:var(--bl);color:#fff;text-decoration:none;padding:8px 16px;border-radius:8px;font-weight:700}
+[data-theme="dark"] .btn,:root:not([data-theme="light"]) .btn{color:#10202b}
+.scale{height:16px;border-radius:8px;background:linear-gradient(90deg,#4aa37a,#f2c14e,#c9473a);margin:8px 0 2px}
+.sl{display:flex;justify-content:space-between;font-size:.85rem;color:var(--mu)}
+svg text{fill:var(--tx);font:600 14px "Trebuchet MS",sans-serif}
+pre{white-space:pre-wrap;background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:10px;font:inherit;font-size:.9rem;margin:8px 0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header><h1 class="ch">Speak Up: Modal Verbs against Bullying</h1>
+<p>Learn <b>must, mustn’t, have to, should</b> and <b>ought to</b>. Practice <b>listening</b> and <b>speaking</b> and earn points.</p>
+<p class="course">Created for the course <b>Technology in Foreign Language Teaching</b>.</p>
+<div id="sc" aria-live="polite">⭐ 0 pts · Beginner</div></header>
+<nav><a href="#guide">Study guide</a><a href="#ovi">OVI</a><a href="#maps">Infographic &amp; map</a><a href="#listen">Listening</a><a href="#speak">Speaking</a><a href="#ex">Exercises</a><a href="#cards">Flashcards</a><a href="#ai">AI tools</a><a href="#game">Game</a></nav>
+<main>
+<section id="guide"><h2 class="ch">Study guide</h2><p class="sub">Follow these steps. Use the 🔊 buttons to hear the sentences.</p>
+<div class="card"><ol><li>Read the OVI and listen to each example.</li><li>Check the infographic and the mind map.</li><li>Do the listening challenge and answer the questions.</li><li>Repeat the phrases out loud in the speaking practice.</li><li>Finish the exercises, review the flashcards and play the escape room.</li></ol>
+<p><b>Golden rule:</b> modal verb + base verb. ✔ She should help. ✘ She should to help.</p></div></section>
+
+<section id="ovi"><h2 class="ch">OVI: modal verbs for rules and advice</h2><p class="sub">Choose a topic to see its meaning and examples.</p>
+<div class="opts" id="tabs" role="tablist"></div><div class="card" id="panel" aria-live="polite"></div></section>
+
+<section id="maps"><h2 class="ch">Infographic and mind map</h2><div class="grid">
+<div class="card"><b>How strong is it?</b><div class="scale"></div><div class="sl"><span>shouldn’t / should</span><span>have to / must</span><span>mustn’t</span></div><p class="sub">Advice is a suggestion. Rules are required. “Mustn’t” means it is forbidden.</p></div>
+<div class="card"><svg viewBox="0 0 330 230" width="100%" role="img" aria-label="Mind map: modal verbs branch into obligation, prohibition and advice">
+<g stroke="var(--bd2)" stroke-width="2"><line x1="165" y1="115" x2="60" y2="35"/><line x1="165" y1="115" x2="270" y2="35"/><line x1="165" y1="115" x2="165" y2="205"/></g>
+<ellipse cx="165" cy="115" rx="62" ry="26" fill="var(--yl)"/><text x="165" y="120" text-anchor="middle" style="fill:#2b2300">Modal verbs</text>
+<rect x="5" y="15" width="110" height="40" rx="8" fill="var(--sf)" stroke="var(--ok)" stroke-width="2"/><text x="60" y="32" text-anchor="middle">Obligation</text><text x="60" y="48" text-anchor="middle" style="font-size:12px">must / have to</text>
+<rect x="215" y="15" width="110" height="40" rx="8" fill="var(--sf)" stroke="var(--bad)" stroke-width="2"/><text x="270" y="32" text-anchor="middle">Prohibition</text><text x="270" y="48" text-anchor="middle" style="font-size:12px">mustn’t</text>
+<rect x="95" y="185" width="140" height="40" rx="8" fill="var(--sf)" stroke="var(--bl)" stroke-width="2"/><text x="165" y="202" text-anchor="middle">Advice</text><text x="165" y="218" text-anchor="middle" style="font-size:12px">should / ought to</text></svg></div></div></section>
+
+<section id="listen"><h2 class="ch">Listening challenge</h2><p class="sub">Press play (you can replay it). Then answer.</p>
+<div class="card"><button id="play">▶ Play the teacher’s message</button><div id="lq"></div></div></section>
+
+<section id="speak"><h2 class="ch">Speaking practice</h2><p class="sub">Listen with 🔊, repeat with 🎤. If your browser has no microphone support, say it aloud and tap ✔.</p>
+<div class="card" id="sp"></div></section>
+
+<section id="ex"><h2 class="ch">Interactive exercises</h2><p class="sub">Choose the correct modal verb.</p><div class="card" id="eq"></div></section>
+
+<section id="cards"><h2 class="ch">Flashcards</h2><p class="sub">Tap a card to see the answer.</p><div class="grid" id="fc"></div></section>
+
+<section id="ai"><h2 class="ch">AI tools by skill</h2><p class="sub">Two tools for listening and two for speaking. Check each tool’s free limits and age rules.</p><div class="grid" id="tools"></div></section>
+
+
+
+<section id="game"><h2 class="ch">Escape room and presentation</h2><div class="card"><p>Solve 4 challenges in the interactive Genially. Every challenge here also gives you points.</p>
+<a class="btn" href="https://view.genially.com/6ab99722c66b0d4044b9972a" target="_blank" rel="noopener">Open the escape room</a></div></section>
+</main>
+<footer id="team"><h2 class="ch">Our team</h2>
+<ul><li>Maria Angelica Carantonio Orozco</li><li>Arnold Alexander Geovo Yusti</li><li>Alexander Ortega Castro</li><li>Elvis Palacios Amaris</li></ul>
+<p>Created for the course Technology in Foreign Language Teaching.</p></footer>
+<script>
+const $=s=>document.querySelector(s);let pts=0;
+function add(n){pts+=n;const L=pts>=90?"Hero":pts>=60?"Upstander":pts>=30?"Helper":"Beginner";$("#sc").textContent="⭐ "+pts+" pts · "+L}
+function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.9;speechSynthesis.speak(u)}catch(e){}}
+function mk(tag,txt,cls){const e=document.createElement(tag);if(txt)e.textContent=txt;if(cls)e.className=cls;return e}
+const MOD=[["Rules","must / have to","Obligación o norma","We must respect everyone.","You have to report bullying."],
+["Prohibition","mustn’t","Prohibido, no se debe hacer","You mustn’t use hurtful words.","We mustn’t laugh at others."],
+["Advice","should / ought to / shouldn’t","Consejo o recomendación","You should talk to a teacher.","You shouldn’t stay silent."]];
+function tab(i){[...$("#tabs").children].forEach((b,j)=>b.classList.toggle("on",i===j));const m=MOD[i],p=$("#panel");p.textContent="";
+p.append(mk("b",m[1]),mk("p",m[2]+"."));m.slice(3).forEach(s=>{const r=mk("div",null,"row"),b=mk("button","🔊");b.setAttribute("aria-label","Listen: "+s);b.onclick=()=>say(s);r.append(b,mk("span",s,"t"));p.append(r)})}
+MOD.forEach((m,i)=>{const b=mk("button",m[0]);b.onclick=()=>tab(i);$("#tabs").append(b)});tab(0);
+function quiz(id,items){const el=$(id);items.forEach(([q,o,a],i)=>{const d=mk("div",null,"q");d.append(mk("p",(i+1)+". "+q));const r=mk("div",null,"opts"),fb=mk("span",null,"fb");let done=0;
+o.forEach(t=>{const b=mk("button",t);b.onclick=()=>{if(done)return;if(t===a){done=1;b.className="ok";fb.textContent="Correct! +10";add(10)}else{b.className="bad";fb.textContent="Try again."}};r.append(b)});d.append(r,fb);el.append(d)})}
+const MSG="Listen, class. We must respect everyone. You mustn’t use hurtful words. If you see bullying, you have to report it. And you should talk to a teacher if you feel unsafe.";
+$("#play").onclick=()=>say(MSG);
+quiz("#lq",[["What is forbidden?",["Using hurtful words","Reporting bullying","Respecting everyone"],"Using hurtful words"],
+["Which modal shows a strong obligation to report bullying?",["should","have to","mustn’t"],"have to"],
+["What advice does the teacher give if you feel unsafe?",["Stay silent","Talk to a teacher","Use hurtful words"],"Talk to a teacher"]]);
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition,nz=s=>s.toLowerCase().replace(/’/g,"'").replace(/[^a-z' ]/g,"");
+["We must respect everyone.","You mustn’t use hurtful words.","You should talk to a teacher.","You have to report bullying."].forEach(p=>{
+const r=mk("div",null,"row"),l=mk("button","🔊"),m=mk("button","🎤"),k=mk("button","✔"),f=mk("span",null,"fb");let got=0;
+const win=n=>{if(!got){got=1;add(n);f.textContent="Well done! +"+n}};
+l.setAttribute("aria-label","Listen");m.setAttribute("aria-label","Record");k.setAttribute("aria-label","I said it");l.onclick=()=>say(p);k.onclick=()=>win(5);
+m.onclick=()=>{if(!SR){f.textContent="Microphone not available here. Say it aloud and tap ✔.";return}
+try{const s=new SR();s.lang="en-US";s.onresult=e=>{const h=nz(e.results[0][0].transcript),w=nz(p).split(" ");const q=w.filter(x=>h.includes(x)).length/w.length;q>=.7?win(10):f.textContent="Almost. Listen again and retry."};s.onerror=()=>{f.textContent="I could not hear you. Try again."};s.start();f.textContent="Listening…"}catch(e){f.textContent="Say it aloud and tap ✔."}};
+r.append(l,m,k,mk("span",p,"t"),f);$("#sp").append(r)});
+quiz("#eq",[["You ___ use hurtful words. (prohibition)",["must","mustn’t","should"],"mustn’t"],
+["She ___ talk to a teacher. (advice)",["should","mustn’t","has"],"should"],
+["We ___ respect everyone. (rule)",["should","must","mustn’t"],"must"],
+["Which sentence is correct?",["She should help.","She should to help."],"She should help."]]);
+[["A strong school rule","We must respect everyone."],["Something forbidden","You mustn’t use hurtful words."],["Advice for a friend","You should talk to a teacher."],["A duty when you see bullying","You have to report it."],["Advice about silence","You shouldn’t stay silent."],["Help for lonely classmates","We ought to help them."]].forEach(c=>{
+const d=mk("div",c[0],"card fc");d.tabIndex=0;let b=0;const f=()=>{b=!b;d.textContent=b?c[1]:c[0];d.classList.toggle("back",b);if(b)say(c[1])};d.onclick=f;d.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();f()}};$("#fc").append(d)});
+const P="Act as a classmate who is being bullied. I will give you advice using should, shouldn’t, must and mustn’t. Speak in short, simple sentences (level A2-B1). After each answer, gently correct my modal verbs and ask me one new question.";
+[["ElevenLabs","Listening","Turn a dialogue about bullying into audio with different voices.","https://elevenlabs.io"],
+["NotebookLM","Listening","Upload the study guide and ask for a podcast-style audio summary.","https://notebooklm.google.com"],
+["ELSA Speak","Speaking","Repeat sentences like “You shouldn’t stay silent” and get pronunciation feedback.","https://elsaspeak.com"],
+["Gemini Live or ChatGPT Voice","Speaking","Role-play: give advice to a classmate. Copy the prompt below.","https://gemini.google.com"]].forEach(t=>{
+const c=mk("div",null,"card");c.append(mk("b",t[0]),mk("div",t[1],"fb"),mk("p",t[2]));const a=mk("a","Open tool","btn");a.href=t[3];a.target="_blank";a.rel="noopener";c.append(a);$("#tools").append(c)});
+const pc=mk("div",null,"card");pc.append(mk("b","Prompt for speaking role-play"),mk("pre",P));const cp=mk("button","Copy prompt");cp.onclick=()=>{try{navigator.clipboard.writeText(P).then(()=>{cp.textContent="Copied ✔"})}catch(e){cp.textContent="Select and copy the text"}};pc.append(cp);$("#tools").after(pc);
+</script></body></html>
